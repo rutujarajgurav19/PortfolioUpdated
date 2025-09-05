@@ -33,7 +33,7 @@
             <h2>Full-Stack Java Developer</h2>
             <p>Passionate about building secure and scalable applications.<br>
             Skilled in Java | Spring Boot | Hibernate | MySQL | and full stack Java development.</p>
-    
+
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/rutuja-rajgurav-5a9944207/" target="_blank" rel="noopener" aria-label="LinkedIn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -48,7 +48,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c1.285 0 9.75 4.886 10.392 6 .645 1.115.645 10.885 0 12C21.75 19.114 13.287 24 12 24s-9.75-4.886-10.392-6c-.645-1.115-.645-10.885 0-12C2.25 4.886 10.715 0 12 0zm2.295 6.799c-.141 0-.258.115-.258.258v3.875H9.963V6.908c0-.024-.02-.109-.020-.109H8.467c-.141 0-.274.132-.274.258V17.09c0 .142.133.258.274.258h1.476c.142 0 .274-.116.274-.258v-3.907h4.074v3.907c0 .142.132.258.274.258h1.471c.142 0 .274-.116.274-.258V7.057c0-.142-.132-.258-.274-.258H12.295z"/></svg>
                 </a>
             </div>
-    
+
             <a href="#projects" class="btn">View My Work</a>
         </div>
     </section>
@@ -59,7 +59,7 @@
             <div class="about-content">
                 <p>MCA student at <strong>Dr. D. Y. Patil School of Science and Technology, Tathawade-Pune</strong></p>
                 <p>I am an MCA student passionate about full-stack Java development. I specialize in building secure, scalable, and efficient applications using Java, Spring Boot, Hibernate, MySQL, and modern web technologies.</p>
-                
+
                 <div class="expertise-grid">
                     <div class="expertise-card">
                         <h3>Technical Expertise</h3>
@@ -75,7 +75,7 @@
     </section>
 
     <section class="timeline-section" id="education">
-        <h2 class="heading">Education</h2>  
+        <h2 class="heading">Education</h2>
         <div class="timeline-container">
             <div class="timeline-items">
                 <div class="timeline-date">Pursuing</div>
@@ -263,7 +263,7 @@
                 <span class="skill-tag">CSS</span>
                 <span class="skill-tag">Web Development</span>
             </div>
-    
+
             <h2>Soft Skills</h2>
             <div class="skills-container soft-skills">
                 <span class="skill-tag">Proactive</span>
@@ -277,11 +277,11 @@
             </div>
         </div>
     </section>
-    
+
     <section id="contact">
         <div class="container">
             <h2>Contact Me</h2>
-            <form id="contact-form">
+            <form id="contact-form" action="#" method="POST">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
@@ -318,18 +318,18 @@
         // Contact form submission
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             const formData = new FormData(this);
             const name = formData.get('name');
             const email = formData.get('email');
             const message = formData.get('message');
-            
+
             const subject = `Portfolio Contact from ${name}`;
             const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
             const mailtoLink = `mailto:rutujarajgurav19@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            
+
             window.open(mailtoLink);
-            
+
             // Reset form
             this.reset();
             alert('Your email client should open with the message ready to send!');
